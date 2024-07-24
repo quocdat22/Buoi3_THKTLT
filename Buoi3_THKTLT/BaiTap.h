@@ -2,5 +2,7 @@
 #define BAITAP_H
 
 
+void baiTapHuongDan();
+
 
 #endif
