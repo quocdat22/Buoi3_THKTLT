@@ -130,6 +130,37 @@ void sapXepMaTranZicZac(int a[][100], int soDong, int soCot) {
 		}
 	}
 }
+
+
+// Hàm sắp xếp đường chéo chính tăng dần
+void sapXepDuongCheoChinh(int a[][100], int soDong, int soCot) {
+	int n = soDong;
+	int arr[100];
+
+	// Lưu các phần tử của đường chéo chính vào mảng
+	//c1
+	/*for (int i = 0; i < n; i++) {
+		arr[i] = a[i][i];
+	}*/
+	//c2
+	for (int i = 0; i < soDong; i++) {
+		for (int j = 0; j < soCot; j++) {
+			if (i == j) {
+				arr[i] = a[i][j];
+			}
+		}
+	}
+
+	// Sắp xếp mảng một chiều
+	sapXepMang(arr, n);
+
+	// Gán lại các phần tử đã sắp xếp vào đường chéo chính
+	for (int i = 0; i < n; i++) {
+		a[i][i] = arr[i];
+	}
+}
+
+
 void bai2() {
 	srand(time(NULL));
 	int m, n;
@@ -154,8 +185,16 @@ void bai2() {
 
 	//printf("Phan tu lon nhat tren tam giac tren cua duong cheo chinh la: %d", timMaxTamGiacTrenDuongCheoChinh(a, m, n));
 
-	sapXepMaTranZicZac(a, m, n);
+	/*sapXepMaTranZicZac(a, m, n);
 	printf("Ma tran sau khi sap xep theo zic zac la: \n");
+	xuatMang2ChieuBai2(a, m, n);*/
+
+	/*sapXepDuongCheoChinh(a, m, n);
+	printf("Ma tran sau khi sap xep duong cheo chinh la: \n");
+	xuatMang2ChieuBai2(a, m, n);*/
+
+	sapXepDuongCheoChinh(a,m, n);
+	printf("Ma tran sau khi sap xep duong cheo chinh la: \n");
 	xuatMang2ChieuBai2(a, m, n);
 
 }
