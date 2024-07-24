@@ -91,6 +91,26 @@ int timCucDai(int a[][100], int soDong, int soCot) {
 }
 
 
+//Xuất dòng chỉ chứa số chẵn
+void xuatDongChiChuaSoChan(int a[][100], int m, int n) {
+	printf("Cac dong chi chua so chan: \n");
+	for(int i = 0; i<m; i++) {
+		int isChan = 1;
+		for(int j = 0; j<n; j++) {
+			if(a[i][j] % 2 != 0) {
+				isChan = 0;
+				break;
+			}
+		}
+		if(isChan) {
+			for(int j = 0; j<n; j++) {
+				printf("%5d", a[i][j]);
+			}
+			printf("\n");
+		}
+	}
+}
+
 
 void bai1() {
 	srand(time(NULL));
@@ -109,8 +129,10 @@ void bai1() {
 
 	//xuatPhanTuDuongBien(a, m, n);
 
-	int cucDai = timCucDai(a, m, n);
-	printf("Phan tu cuc dai trong mang la: %d\n", cucDai);
+	/*int cucDai = timCucDai(a, m, n);
+	printf("Phan tu cuc dai trong mang la: %d\n", cucDai);*/
+
+	xuatDongChiChuaSoChan(a, m, n);
 
 	return;
 }
