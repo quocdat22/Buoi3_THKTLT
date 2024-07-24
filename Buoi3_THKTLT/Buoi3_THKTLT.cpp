@@ -3,7 +3,10 @@
 
 void main()
 {
-    bai1();
+
+    bai2();
+    
+    //bai1();
 
     //baiTapHuongDan();
 
