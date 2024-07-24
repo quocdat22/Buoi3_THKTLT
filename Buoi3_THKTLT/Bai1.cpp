@@ -43,6 +43,24 @@ void xuatGiaTriLonNhatMoiCot(int a[][100], int m, int n) {
 	}
 }
 
+//Xuất các phần tử thuộc các đường biên trên, dưới, trái và phải của ma trận
+void xuatPhanTuDuongBien(int a[][100], int m, int n) {
+	printf("Cac phan tu thuoc duong bien cua ma tran la: \n");
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			if (i == 0 || i == m - 1 || j == 0 || j == n - 1) {
+				printf("%5d", a[i][j]);
+			}
+			else {
+				printf("     ");
+			}
+		}
+		printf("\n");
+	}
+}
+
+
+
 
 void bai1() {
 	int m = 5;
@@ -56,8 +74,9 @@ void bai1() {
 
 	//tinhTongTungDong(a, m, n);
 
-	xuatGiaTriLonNhatMoiCot(a, m, n);
+	//xuatGiaTriLonNhatMoiCot(a, m, n);
 
+	xuatPhanTuDuongBien(a, m, n);
 
 	return;
 }
