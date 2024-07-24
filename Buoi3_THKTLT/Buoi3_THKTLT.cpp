@@ -3,7 +3,9 @@
 
 void main()
 {
-    baiTapHuongDan();
+    bai1();
+
+    //baiTapHuongDan();
 
 
     return;

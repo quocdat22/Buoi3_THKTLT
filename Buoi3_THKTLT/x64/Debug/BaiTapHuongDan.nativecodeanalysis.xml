@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi3_THKTLT\Buoi3_THKTLT\</FILEPATH>
+      <FILENAME>BaiTapHuongDan.cpp</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6274</DEFECTCODE>
+    <DESCRIPTION>Non-character passed as _Param_(2) when a character is required in call to 'printf' Actual type: 'const char [2]'.</DESCRIPTION>
+    <FUNCTION>xuatTamGiacDuoiCuaDuongCheoChinh</FUNCTION>
+    <DECORATED>?xuatTamGiacDuoiCuaDuongCheoChinh@@YAXQEAY0GE@HHH@Z</DECORATED>
+    <FUNCLINE>32</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi3_THKTLT\Buoi3_THKTLT\</FILEPATH>
+      <FILENAME>BaiTapHuongDan.cpp</FILENAME>
+      <LINE>52</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6274</DEFECTCODE>
+    <DESCRIPTION>Non-character passed as _Param_(2) when a character is required in call to 'printf' Actual type: 'const char [2]'.</DESCRIPTION>
+    <FUNCTION>xuatTamGiacTrenCuaDuongCheoChinh</FUNCTION>
+    <DECORATED>?xuatTamGiacTrenCuaDuongCheoChinh@@YAXQEAY0GE@HHH@Z</DECORATED>
+    <FUNCLINE>45</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi3_THKTLT\Buoi3_THKTLT\</FILEPATH>
+      <FILENAME>BaiTapHuongDan.cpp</FILENAME>
+      <LINE>71</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Function uses '40008' bytes of stack.  Consider moving some data to heap.</DESCRIPTION>
+    <FUNCTION>baiTapHuongDan</FUNCTION>
+    <DECORATED>?baiTapHuongDan@@YAXXZ</DECORATED>
+    <FUNCLINE>71</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

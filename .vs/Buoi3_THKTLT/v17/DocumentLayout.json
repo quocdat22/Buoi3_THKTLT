@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C7B8C063-0AD5-4D8D-916A-472A6F552996}|Buoi3_THKTLT\\Buoi3_THKTLT.vcxproj|C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\Bai1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C7B8C063-0AD5-4D8D-916A-472A6F552996}|Buoi3_THKTLT\\Buoi3_THKTLT.vcxproj|solutionrelative:Buoi3_THKTLT\\Bai1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C7B8C063-0AD5-4D8D-916A-472A6F552996}|Buoi3_THKTLT\\Buoi3_THKTLT.vcxproj|C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\BaiTapHuongDan.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C7B8C063-0AD5-4D8D-916A-472A6F552996}|Buoi3_THKTLT\\Buoi3_THKTLT.vcxproj|solutionrelative:Buoi3_THKTLT\\BaiTapHuongDan.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7B8C063-0AD5-4D8D-916A-472A6F552996}|Buoi3_THKTLT\\Buoi3_THKTLT.vcxproj|C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\Buoi3_THKTLT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C7B8C063-0AD5-4D8D-916A-472A6F552996}|Buoi3_THKTLT\\Buoi3_THKTLT.vcxproj|solutionrelative:Buoi3_THKTLT\\Buoi3_THKTLT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C7B8C063-0AD5-4D8D-916A-472A6F552996}|Buoi3_THKTLT\\Buoi3_THKTLT.vcxproj|C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\BaiTap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C7B8C063-0AD5-4D8D-916A-472A6F552996}|Buoi3_THKTLT\\Buoi3_THKTLT.vcxproj|solutionrelative:Buoi3_THKTLT\\BaiTap.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B8C063-0AD5-4D8D-916A-472A6F552996}|Buoi3_THKTLT\\Buoi3_THKTLT.vcxproj|C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\Buoi3_THKTLT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C7B8C063-0AD5-4D8D-916A-472A6F552996}|Buoi3_THKTLT\\Buoi3_THKTLT.vcxproj|solutionrelative:Buoi3_THKTLT\\Buoi3_THKTLT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,19 +26,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BaiTapHuongDan.cpp",
               "DocumentMoniker": "C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\BaiTapHuongDan.cpp",
               "RelativeDocumentMoniker": "Buoi3_THKTLT\\BaiTapHuongDan.cpp",
               "ToolTip": "C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\BaiTapHuongDan.cpp",
               "RelativeToolTip": "Buoi3_THKTLT\\BaiTapHuongDan.cpp",
-              "ViewState": "AQIAADoAAAAAAAAAAAAYwEQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-23T23:27:43.136Z",
+              "WhenOpened": "2024-07-24T00:23:09.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bai1.cpp",
+              "DocumentMoniker": "C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\Bai1.cpp",
+              "RelativeDocumentMoniker": "Buoi3_THKTLT\\Bai1.cpp",
+              "ToolTip": "C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\Bai1.cpp",
+              "RelativeToolTip": "Buoi3_THKTLT\\Bai1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-24T00:17:45.638Z",
               "EditorCaption": ""
             },
             {
@@ -45,23 +62,21 @@
               "RelativeDocumentMoniker": "Buoi3_THKTLT\\BaiTap.h",
               "ToolTip": "C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\BaiTap.h",
               "RelativeToolTip": "Buoi3_THKTLT\\BaiTap.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-23T22:52:52.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T22:52:52.291Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Buoi3_THKTLT.cpp",
               "DocumentMoniker": "C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\Buoi3_THKTLT.cpp",
               "RelativeDocumentMoniker": "Buoi3_THKTLT\\Buoi3_THKTLT.cpp",
               "ToolTip": "C:\\Users\\datho\\OneDrive\\Documents\\CNTT\\Ky thuat lap trinh\\thuc hanh\\Buoi3_THKTLT\\Buoi3_THKTLT\\Buoi3_THKTLT.cpp",
               "RelativeToolTip": "Buoi3_THKTLT\\Buoi3_THKTLT.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-23T22:52:04.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T22:52:04.778Z"
             }
           ]
         }

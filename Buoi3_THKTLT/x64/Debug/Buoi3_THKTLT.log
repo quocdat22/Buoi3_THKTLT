@@ -1,6 +1,10 @@
-﻿  BaiTapHuongDan.cpp
+﻿  Bai1.cpp
+  BaiTapHuongDan.cpp
+  Buoi3_THKTLT.cpp
 C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi3_THKTLT\Buoi3_THKTLT\BaiTapHuongDan.cpp(39,12): warning C4477: 'printf' : format string '%5c' requires an argument of type 'int', but variadic argument 1 has type 'const char *'
 C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi3_THKTLT\Buoi3_THKTLT\BaiTapHuongDan.cpp(39,12): warning C4313: 'printf': '%c' in format string conflicts with argument 1 of type 'const char *'
 C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi3_THKTLT\Buoi3_THKTLT\BaiTapHuongDan.cpp(52,12): warning C4477: 'printf' : format string '%5c' requires an argument of type 'int', but variadic argument 1 has type 'const char *'
 C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi3_THKTLT\Buoi3_THKTLT\BaiTapHuongDan.cpp(52,12): warning C4313: 'printf': '%c' in format string conflicts with argument 1 of type 'const char *'
+C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi3_THKTLT\Buoi3_THKTLT\Buoi3_THKTLT.cpp(4,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating Code...
   Buoi3_THKTLT.vcxproj -> C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi3_THKTLT\x64\Debug\Buoi3_THKTLT.exe
