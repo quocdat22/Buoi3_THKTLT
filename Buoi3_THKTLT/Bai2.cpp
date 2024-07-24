@@ -80,7 +80,56 @@ int timMaxTamGiacTrenDuongCheoChinh(int a[][100], int soDong, int soCot) {
 	}
 	return max;
 }
+//Sắp xếp ma trận tăng dần theo kiểu zic-zắc (tăng từ trái qua phải và từ trên xuống dưới)
+// Hàm hoán đổi hai số nguyên
+void swap(int* a, int* b) {
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
 
+// Hàm sắp xếp mảng một chiều
+void sapXepMang(int arr[], int n) {
+	for (int i = 0; i < n - 1; i++) {
+		for (int j = 0; j < n - i - 1; j++) {
+			if (arr[j] > arr[j + 1]) {
+				swap(&arr[j], &arr[j + 1]);
+			}
+		}
+	}
+}
+
+// Hàm sắp xếp ma trận theo kiểu zic-zắc
+void sapXepMaTranZicZac(int a[][100], int soDong, int soCot) {
+	int n = soCot * soDong;
+	int arr[100];
+	int index = 0;
+
+	// Chuyển đổi ma trận thành mảng một chiều
+	for (int i = 0; i < soDong; i++) {
+		for (int j = 0; j < soCot; j++) {
+			arr[index++] = a[i][j];
+		}
+	}
+
+	// Sắp xếp mảng một chiều
+	sapXepMang(arr, n);
+
+	// Chuyển đổi mảng đã sắp xếp trở lại thành ma trận theo kiểu zic-zắc
+	index = 0;
+	for (int i = 0; i < soDong; i++) {
+		if (i % 2 == 0) {
+			for (int j = 0; j < soCot; j++) {
+				a[i][j] = arr[index++];
+			}
+		}
+		else {
+			for (int j = soCot - 1; j >= 0; j--) {
+				a[i][j] = arr[index++];
+			}
+		}
+	}
+}
 void bai2() {
 	srand(time(NULL));
 	int m, n;
@@ -103,7 +152,10 @@ void bai2() {
 
 	//xuatDuongCheoSongSongChinh(a, m, n);
 
-	printf("Phan tu lon nhat tren tam giac tren cua duong cheo chinh la: %d", timMaxTamGiacTrenDuongCheoChinh(a, m, n));
+	//printf("Phan tu lon nhat tren tam giac tren cua duong cheo chinh la: %d", timMaxTamGiacTrenDuongCheoChinh(a, m, n));
 
+	sapXepMaTranZicZac(a, m, n);
+	printf("Ma tran sau khi sap xep theo zic zac la: \n");
+	xuatMang2ChieuBai2(a, m, n);
 
 }
