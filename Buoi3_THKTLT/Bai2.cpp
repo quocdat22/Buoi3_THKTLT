@@ -20,6 +20,26 @@ void xuatMang2ChieuBai2(int a[][100], int m, int n) {
 	}
 }
 
+//Xuất các phần tử trên đường chéo chính
+void xuatDuongCheoChinhBai2(int a[][100], int m, int n) {
+	printf("Cac phan tu tren duong cheo chinh la: ");
+	
+	//cach1
+	/*for(int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			if (i == j) {
+				printf("%5d", a[i][j]);
+			}
+		}
+	}*/
+
+	//cach2
+	for (int i = 0; i < m; i++) {
+		printf("%5d", a[i][i]);
+	}
+	printf("\n");
+}
+
 
 void bai2() {
 	int m, n;
@@ -38,7 +58,7 @@ void bai2() {
 	
 	
 
-	
+	xuatDuongCheoChinhBai2(a, m, n);
 
 
 
