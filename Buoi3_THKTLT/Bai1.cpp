@@ -111,6 +111,24 @@ void xuatDongChiChuaSoChan(int a[][100], int m, int n) {
 	}
 }
 
+//Sắp xếp dòng tăng dần
+void sapXepDongTangDan(int a[], int n) {
+	for(int i = 0; i < n - 1; i++){
+		for (int j = i + 1; j < n; j++) {
+			if (a[i] > a[j]) {
+				int temp = a[i];
+				a[i] = a[j];
+				a[j] = temp;
+			}
+		}
+	}
+}
+
+void sapXepDongTangDan(int a[][100], int m) {
+	for (int i = 0; i < m; i++) {
+		sapXepDongTangDan(a[i], m);
+	}
+}
 
 void bai1() {
 	srand(time(NULL));
@@ -132,7 +150,11 @@ void bai1() {
 	/*int cucDai = timCucDai(a, m, n);
 	printf("Phan tu cuc dai trong mang la: %d\n", cucDai);*/
 
-	xuatDongChiChuaSoChan(a, m, n);
+	//xuatDongChiChuaSoChan(a, m, n);
+
+	sapXepDongTangDan(a, m);
+	printf("Mang sau khi sap xep cac dong tang dan: \n");
+	xuatMang2Chieu(a, m, n);
 
 	return;
 }
