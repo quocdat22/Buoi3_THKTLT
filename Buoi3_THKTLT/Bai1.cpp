@@ -31,6 +31,18 @@ void tinhTongTungDong(int a[][100], int m, int n) {
 	}
 }
 
+void xuatGiaTriLonNhatMoiCot(int a[][100], int m, int n) {
+	for (int j = 0; j < n; j++)
+	{
+		int max = a[0][j];
+		for (int i = 0; i < m; i++) {
+			if(max < a[i][j])
+				max = a[i][j];
+		}
+		printf("Gia tri lon nhat tai cot %d la %d\n", j, max);
+	}
+}
+
 
 void bai1() {
 	int m = 5;
@@ -42,8 +54,9 @@ void bai1() {
 	printf("Mang 2 chieu duoc khoi tao ngau nhien: \n");
 	xuatMang2Chieu(a, m, n);
 
-	tinhTongTungDong(a, m, n);
+	//tinhTongTungDong(a, m, n);
 
+	xuatGiaTriLonNhatMoiCot(a, m, n);
 
 
 	return;
