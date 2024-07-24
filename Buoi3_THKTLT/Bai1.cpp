@@ -1,6 +1,7 @@
 #include "BaiTap.h"
 #include<stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 
 void khoiTaoMang2Chieu(int a[][100], int m, int n) {
@@ -60,9 +61,39 @@ void xuatPhanTuDuongBien(int a[][100], int m, int n) {
 }
 
 
+//xuất các phần tử cực đại
+int timCucDai(int a[][100], int soDong, int soCot) {
+	int max = a[0][0];
+
+	for (int i = 0; i < soDong; i++) {
+		for (int j = 0; j < soCot; j++) {
+			// Kiểm tra nếu a[i][j] là phần tử cực đại
+			int isCucDai = 1;
+
+			// Kiểm tra các phần tử lân cận
+			if (i > 0 && a[i][j] < a[i - 1][j]) isCucDai = 0; // Phía trên
+			if (i < soDong - 1 && a[i][j] < a[i + 1][j]) isCucDai = 0; // Phía dưới
+			if (j > 0 && a[i][j] < a[i][j - 1]) isCucDai = 0; // Bên trái
+			if (j < soCot - 1 && a[i][j] < a[i][j + 1]) isCucDai = 0; // Bên phải
+			if (i > 0 && j > 0 && a[i][j] < a[i - 1][j - 1]) isCucDai = 0; // Đường chéo trên trái
+			if (i > 0 && j < soCot - 1 && a[i][j] < a[i - 1][j + 1]) isCucDai = 0; // Đường chéo trên phải
+			if (i < soDong - 1 && j > 0 && a[i][j] < a[i + 1][j - 1]) isCucDai = 0; // Đường chéo dưới trái
+			if (i < soDong - 1 && j < soCot - 1 && a[i][j] < a[i + 1][j + 1]) isCucDai = 0; // Đường chéo dưới phải
+
+			// Nếu a[i][j] là phần tử cực đại, kiểm tra giá trị max
+			if (isCucDai && a[i][j] > max) {
+				max = a[i][j];
+			}
+		}
+	}
+
+	return max;
+}
+
 
 
 void bai1() {
+	srand(time(NULL));
 	int m = 5;
 	int n = 5;
 	int a[100][100];
@@ -76,7 +107,10 @@ void bai1() {
 
 	//xuatGiaTriLonNhatMoiCot(a, m, n);
 
-	xuatPhanTuDuongBien(a, m, n);
+	//xuatPhanTuDuongBien(a, m, n);
+
+	int cucDai = timCucDai(a, m, n);
+	printf("Phan tu cuc dai trong mang la: %d\n", cucDai);
 
 	return;
 }
