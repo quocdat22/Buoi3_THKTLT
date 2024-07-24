@@ -1,6 +1,7 @@
 #include "BaiTap.h"
 #include<stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 
 void khoiTaoMang2ChieuBai2(int a[][100], int m, int n) {
@@ -67,8 +68,21 @@ void xuatDuongCheoSongSongChinh(int a[][100], int soDong, int soCot) {
 	}
 }
 
+//Tìm phần tử max thuộc tam giác trên của đường chéo chính.
+int timMaxTamGiacTrenDuongCheoChinh(int a[][100], int soDong, int soCot) {
+	int max = a[0][0];
+	for (int i = 0; i < soDong; i++) {
+		for (int j = i + 1; j < soCot; j++) {
+			if (a[i][j] > max) {
+				max = a[i][j];
+			}
+		}
+	}
+	return max;
+}
 
 void bai2() {
+	srand(time(NULL));
 	int m, n;
 	int a[100][100];
 
@@ -87,8 +101,9 @@ void bai2() {
 
 	//xuatDuongCheoChinhBai2(a, m, n);
 
-	xuatDuongCheoSongSongChinh(a, m, n);
+	//xuatDuongCheoSongSongChinh(a, m, n);
 
+	printf("Phan tu lon nhat tren tam giac tren cua duong cheo chinh la: %d", timMaxTamGiacTrenDuongCheoChinh(a, m, n));
 
 
 }
