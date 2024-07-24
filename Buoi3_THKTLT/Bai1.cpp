@@ -19,6 +19,18 @@ void xuatMang2Chieu(int a[][100], int m, int n) {
 	}
 }
 
+void tinhTongTungDong(int a[][100], int m, int n) {
+	//m dong , n cot
+	
+	for (int i = 0; i < m; i++) {
+		int sum = 0;
+		for (int j = 0; j < n; j++) {
+			sum += a[i][j];
+		}
+		printf("Tong gia tri cua phan tu tai dong %d: %d\n", i, sum);
+	}
+}
+
 
 void bai1() {
 	int m = 5;
@@ -29,6 +41,10 @@ void bai1() {
 
 	printf("Mang 2 chieu duoc khoi tao ngau nhien: \n");
 	xuatMang2Chieu(a, m, n);
+
+	tinhTongTungDong(a, m, n);
+
+
 
 	return;
 }
