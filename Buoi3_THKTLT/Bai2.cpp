@@ -40,6 +40,33 @@ void xuatDuongCheoChinhBai2(int a[][100], int m, int n) {
 	printf("\n");
 }
 
+//Xuất các phần tử thuộc đường chéo song song với đường chéo chính.
+void xuatDuongCheoSongSongChinh(int a[][100], int soDong, int soCot) {
+	// Xuất các đường chéo song song với đường chéo chính ở phía trên (bao gồm đường chéo chính)
+	printf("Duong cheo phia tren: \n");
+	for (int k = 0; k < soCot; k++) {
+		int i = 0, j = k;
+		while (i < soDong && j < soCot) {
+			printf("%d ", a[i][j]);
+			i++;
+			j++;
+		}
+		printf("\n");
+	}
+
+	// Xuất các đường chéo song song với đường chéo chính ở phía dưới
+	printf("Duong cheo phia duoi: \n");
+	for (int k = 1; k < soDong; k++) {
+		int i = k, j = 0;
+		while (i < soDong && j < soCot) {
+			printf("%d ", a[i][j]);
+			i++;
+			j++;
+		}
+		printf("\n");
+	}
+}
+
 
 void bai2() {
 	int m, n;
@@ -58,8 +85,9 @@ void bai2() {
 	
 	
 
-	xuatDuongCheoChinhBai2(a, m, n);
+	//xuatDuongCheoChinhBai2(a, m, n);
 
+	xuatDuongCheoSongSongChinh(a, m, n);
 
 
 
