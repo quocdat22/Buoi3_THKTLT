@@ -153,7 +153,7 @@ void sapXepMaTranLeGiamChanTang(int a[][100], int m, int n) {
 	}
 }
 
-int kiemTraZiczac(int a[][100], int m, int n) {
+int kiemTraZiczacCot(int a[][100], int m, int n) {
 	for (int j = 0; j < n; j++) {
 		for (int i = 0; i < m - 1; i++) {
 			if (a[i][j] < a[i + 1][j]) {
@@ -162,6 +162,18 @@ int kiemTraZiczac(int a[][100], int m, int n) {
 		}
 	}
 	return 1; // Thỏa mãn điều kiện giảm dần
+}
+
+
+int kiemTraZiczacDong(int a[][100], int m, int n) {
+	for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n - 1; j++) {
+			if (a[i][j] < a[i][j + 1]) {
+				return 0; // Không thỏa mãn điều kiện giảm dần theo dòng
+			}
+		}
+	}
+	return 1; // Thỏa mãn điều kiện giảm dần theo dòng
 }
 
 
@@ -194,11 +206,18 @@ void bai3() {
 	printf("\nMang 2 chieu sau khi sap xep (le giam, chan tang): \n");
 	xuatMang2ChieuBai3(a, m, n);*/
 
-	if (kiemTraZiczac(a, m, n)) {
+	/*if (kiemTraZiczacCot(a, m, n)) {
 		printf("Ma tran thoa man dieu kien giam dan theo cot (ziczac).\n");
 	}
 	else {
 		printf("Ma tran khong thoa man dieu kien giam dan theo cot (ziczac).\n");
+	}*/
+
+	if (kiemTraZiczacDong(a, m, n)) {
+		printf("Ma tran thoa man dieu kien giam dan theo dong (ziczac).\n");
+	}
+	else {
+		printf("Ma tran khong thoa man dieu kien giam dan theo dong (ziczac).\n");
 	}
 
 	return;
