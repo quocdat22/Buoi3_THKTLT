@@ -263,6 +263,28 @@ int timChuSoXuatHienNhieuNhat(int demChuSo[]) {
 	return maxChuSo;
 }
 
+//Liệt kê các cột có tổng nhỏ nhất trong ma trận
+void lietKeCotCoTongNhoNhat(int a[][100], int m, int n) {
+	int sum[100] = { 0 };
+	for (int j = 0; j < n; j++) {
+		for (int i = 0; i < m; i++) {
+			sum[j] += a[i][j];
+		}
+	}
+	int minSum = sum[0];
+	for (int j = 1; j < n; j++) {
+		if (sum[j] < minSum) {
+			minSum = sum[j];
+		}
+	}
+	printf("Cac cot co tong nho nhat la:");
+	for (int j = 0; j < n; j++) {
+		if (sum[j] == minSum) {
+			printf("%5d", j);
+		}
+	}
+}
+
 void bai3() {
 	srand(time(NULL));
 	int m = 5;
@@ -274,13 +296,16 @@ void bai3() {
 	printf("Mang 2 chieu duoc khoi tao ngau nhien: \n");
 	xuatMang2ChieuBai3(a, m, n);
 
-	//11
-	// Đếm chữ số
-	int demChuSoC[10] = { 0 }; // Mảng đếm chữ số từ 0 đến 9
-	demChuSo(a, m, n, demChuSoC);
-	// Tìm chữ số xuất hiện nhiều nhất
-	int chuSoNhieuNhat = timChuSoXuatHienNhieuNhat(demChuSoC);
-	printf("Chu so xuat hien nhieu nhat trong ma tran la: %d\n", chuSoNhieuNhat);
+	//12
+	lietKeCotCoTongNhoNhat(a, m, n);
+
+	////11
+	//// Đếm chữ số
+	//int demChuSoC[10] = { 0 }; // Mảng đếm chữ số từ 0 đến 9
+	//demChuSo(a, m, n, demChuSoC);
+	//// Tìm chữ số xuất hiện nhiều nhất
+	//int chuSoNhieuNhat = timChuSoXuatHienNhieuNhat(demChuSoC);
+	//printf("Chu so xuat hien nhieu nhat trong ma tran la: %d\n", chuSoNhieuNhat);
 
 	//10
 	//printf("\nGia tri xuat hien nhieu nhat trong ma tran la: %d\n", timGiaTriXuatHienNhieuNhat(a, m, n));
