@@ -3,8 +3,9 @@
 
 void main()
 {
+    bai3();
 
-    bai2();
+    //bai2();
     
     //bai1();
 

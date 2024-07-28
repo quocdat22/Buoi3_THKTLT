@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Bai1.cpp" />
     <ClCompile Include="Bai2.cpp" />
+    <ClCompile Include="Bai3.cpp" />
     <ClCompile Include="BaiTapHuongDan.cpp" />
     <ClCompile Include="Buoi3_THKTLT.cpp" />
   </ItemGroup>
