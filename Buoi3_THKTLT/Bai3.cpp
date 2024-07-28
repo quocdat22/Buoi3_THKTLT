@@ -193,6 +193,23 @@ void lietKeCacDongChuaToanGiaTriChan(int a[][100], int m, int n) {
 	}
 }
 
+//Liệt kê các dòng chứa giá trị giảm dần
+void lietKeCacDongChuaGiaTriGiamDan(int a[][100], int m, int n) {
+	printf("Cac dong chua gia tri giam dan la:");
+	for (int i = 0; i < m; i++) {
+		int flag = 1;
+		for (int j = 0; j < n - 1; j++) {
+			if (a[i][j] < a[i][j + 1]) {
+				flag = 0;
+				break;
+			}
+		}
+		if (flag == 1) {
+			printf("%5d", i);
+		}
+	}
+}
+
 
 void bai3() {
 	srand(time(NULL));
@@ -204,6 +221,10 @@ void bai3() {
 
 	printf("Mang 2 chieu duoc khoi tao ngau nhien: \n");
 	xuatMang2ChieuBai3(a, m, n);
+
+
+	//9
+	lietKeCacDongChuaGiaTriGiamDan(a, m, n);
 
 	//xuatCotChiChuaSoLe(a, m, n);
 
@@ -236,7 +257,7 @@ void bai3() {
 		printf("Ma tran khong thoa man dieu kien giam dan theo dong (ziczac).\n");
 	}*/
 
-	lietKeCacDongChuaToanGiaTriChan(a, m, n);
+	//lietKeCacDongChuaToanGiaTriChan(a, m, n);
 
 	return;
 }
