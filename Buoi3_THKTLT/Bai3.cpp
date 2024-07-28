@@ -285,6 +285,15 @@ void lietKeCotCoTongNhoNhat(int a[][100], int m, int n) {
 	}
 }
 
+//Hoán vị hai cột i và j trong ma trận
+void hoanViHaiCot(int a[][100], int m, int n, int i, int j) {
+	for (int k = 0; k < m; k++) {
+		int temp = a[k][i];
+		a[k][i] = a[k][j];
+		a[k][j] = temp;
+	}
+}
+
 void bai3() {
 	srand(time(NULL));
 	int m = 5;
@@ -296,8 +305,14 @@ void bai3() {
 	printf("Mang 2 chieu duoc khoi tao ngau nhien: \n");
 	xuatMang2ChieuBai3(a, m, n);
 
+	//13
+	hoanViHaiCot(a, m, n, 1, 2);
+	printf("\nMang 2 chieu sau khi hoan vi cot 1 va 2: \n");
+	xuatMang2ChieuBai3(a, m, n);
+
+
 	//12
-	lietKeCotCoTongNhoNhat(a, m, n);
+	//lietKeCotCoTongNhoNhat(a, m, n);
 
 	////11
 	//// Đếm chữ số
