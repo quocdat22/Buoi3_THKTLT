@@ -153,6 +153,18 @@ void sapXepMaTranLeGiamChanTang(int a[][100], int m, int n) {
 	}
 }
 
+int kiemTraZiczac(int a[][100], int m, int n) {
+	for (int j = 0; j < n; j++) {
+		for (int i = 0; i < m - 1; i++) {
+			if (a[i][j] < a[i + 1][j]) {
+				return 0; // Không thỏa mãn điều kiện giảm dần
+			}
+		}
+	}
+	return 1; // Thỏa mãn điều kiện giảm dần
+}
+
+
 
 void bai3() {
 	srand(time(NULL));
@@ -178,9 +190,16 @@ void bai3() {
 	printf("\nMang 2 chieu sau khi sap xep (le tang, chan giam): \n");
 	xuatMang2ChieuBai3(a, m, n);*/
 
-	sapXepMaTranLeGiamChanTang(a, m, n);
+	/*sapXepMaTranLeGiamChanTang(a, m, n);
 	printf("\nMang 2 chieu sau khi sap xep (le giam, chan tang): \n");
-	xuatMang2ChieuBai3(a, m, n);
+	xuatMang2ChieuBai3(a, m, n);*/
+
+	if (kiemTraZiczac(a, m, n)) {
+		printf("Ma tran thoa man dieu kien giam dan theo cot (ziczac).\n");
+	}
+	else {
+		printf("Ma tran khong thoa man dieu kien giam dan theo cot (ziczac).\n");
+	}
 
 	return;
 }
