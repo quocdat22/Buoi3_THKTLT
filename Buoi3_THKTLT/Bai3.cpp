@@ -140,6 +140,19 @@ void sapXepMaTranLeTangChanGiam(int a[][100], int m, int n) {
 	}
 }
 
+void sapXepMaTranLeGiamChanTang(int a[][100], int m, int n) {
+	for (int i = 0; i < m; i++) {
+		if (i % 2 != 0) {
+			// Dòng có chỉ số chẵn (bắt đầu từ 0) -> sắp xếp giảm dần
+			sapXepDongGiamDanBai3(a[i], n);
+		}
+		else {
+			// Dòng có chỉ số lẻ -> sắp xếp tăng dần
+			sapXepDongTangDanBai3(a[i], n);
+		}
+	}
+}
+
 
 void bai3() {
 	srand(time(NULL));
@@ -161,8 +174,12 @@ void bai3() {
 
 	//xuatCacPhanTuCucTieu(a, m, n);
 
-	sapXepMaTranLeTangChanGiam(a, m, n);
+	/*sapXepMaTranLeTangChanGiam(a, m, n);
 	printf("\nMang 2 chieu sau khi sap xep (le tang, chan giam): \n");
+	xuatMang2ChieuBai3(a, m, n);*/
+
+	sapXepMaTranLeGiamChanTang(a, m, n);
+	printf("\nMang 2 chieu sau khi sap xep (le giam, chan tang): \n");
 	xuatMang2ChieuBai3(a, m, n);
 
 	return;
